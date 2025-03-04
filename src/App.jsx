@@ -39,9 +39,9 @@ function App() {
             }}
           >
             <HeroContent />
-            <AchievementsTimeline />
-            <ImageGallery />
             <AboutSection />
+            <ImageGallery />
+            <AchievementsTimeline />
             <ContactInfo />
             <ForDonation />
           </Layout.Content>

@@ -8,7 +8,7 @@ const Footer = () => {
                 padding: '0px 50px',
             }}
         >
-            &copy; Good Will Foundation Osmania University 2020
+            &copy; Good Will Foundation Osmania Medical College 2020
         </Layout.Footer>
     )
 }

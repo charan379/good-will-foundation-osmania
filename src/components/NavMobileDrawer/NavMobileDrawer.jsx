@@ -16,7 +16,7 @@ const NavMobileDrawer = () => {
   return (
     <>
       <Button type="text" onClick={showDrawer} icon={<MenuOutlined style={{fontSize: "22px"}}/>} size="large" />
-      <Drawer title="Good Will Foundation Osmania University" onClose={onClose} open={open} width={"80%"}>
+      <Drawer title="Good Will Foundation" onClose={onClose} open={open} width={"80%"}>
         <NavMenu />
       </Drawer>
     </>
