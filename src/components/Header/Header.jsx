@@ -29,7 +29,7 @@ const Header = () => {
             width={65}
             height={65}
             alt="good-will-foundation-osmania-logo"
-            src="./good-will-foundation-osmania/images/logo/good-will-foundation-logo.png"
+            src="/good-will-foundation-osmania/images/logo/good-will-foundation-logo.png"
           />
         </Col>
         <Col xs={0} lg={14}>
@@ -44,7 +44,7 @@ const Header = () => {
             width={65}
             height={65}
             alt="good-will-foundation-osmania-logo"
-            src="./good-will-foundation-osmania/images/logo/osmania-college-logo.png"
+            src="/good-will-foundation-osmania/images/logo/osmania-college-logo.png"
           />
         </Col>
       </Row>
