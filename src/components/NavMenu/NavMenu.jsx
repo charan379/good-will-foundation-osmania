@@ -7,8 +7,8 @@ const NavLabel = ({ name, isLink, href }) => {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-        block: "nearest",
-        inline: "nearest",
+        block: "center",
+        inline: "center",
       });
     }
   };
@@ -187,7 +187,7 @@ const NavMenu = () => {
           key: "6",
           title: "For Donations",
           label: (
-            <NavLabel name={"For Donations"} isLink={true} href={"donations"} />
+            <NavLabel name={"For Donations"} isLink={true} href={"for-donations"} />
           ),
         },
       ]}

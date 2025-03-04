@@ -1,6 +1,17 @@
-import { Button, Col, Layout, Row, Typography } from "antd";
+import { Button, Col, Row, Typography } from "antd";
 
 const HeroContent = () => {
+  const scrollToSection = () => {
+    const element = document.getElementById("about-us");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "start",
+      });
+    }
+  };
+
   return (
     <div
       style={{
@@ -22,17 +33,12 @@ const HeroContent = () => {
           <Typography.Title style={{ color: "#fff", letterSpacing: 1 }}>
             Good Will Foundation
           </Typography.Title>
-          <Typography.Title
-            style={{ fontSize: "16px", color: "#fff", margin: "20px 0" }}
-          >
-            The Good Will Foundation is a charitable student organized trust
-            dedicated to supporting financially underprivileged first-year MBBS
-            (Bachelor of Medicine, Bachelor of Surgery) students .
-          </Typography.Title>
-          <Typography.Paragraph style={{ fontSize: "16px", color: "#e0e6ed" }}>
-            It is to provide financial aid, resources, and a platform for
-            students to pursue their dreams of becoming doctors, regardless of
-            their economic background.
+          <Typography.Paragraph style={{ color: "#fff", margin: "20px 0" }}>
+            The <b>Good Will Foundation</b> is a charitable student-organized
+            trust dedicated to supporting financially underprivileged first-year
+            MBBS students. Our mission is to provide financial aid, resources,
+            and a platform for students to pursue their dreams of becoming
+            doctors, regardless of their economic background.
           </Typography.Paragraph>
           <Button
             type="primary"
@@ -43,6 +49,7 @@ const HeroContent = () => {
               padding: "0 30px",
               borderColor: "#2196F3",
             }}
+            onClick={scrollToSection}
           >
             Read More
           </Button>

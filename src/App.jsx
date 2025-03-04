@@ -7,6 +7,8 @@ import ErrorBoundary from "antd/es/alert/ErrorBoundary";
 import AchievementsTimeline from "./components/AchievementsTimeline";
 import AboutSection from "./components/AboutSection";
 import ImageGallery from "./components/ImageGallery";
+import ContactInfo from "./components/ContactInfo";
+import ForDonation from "./components/ForDonation";
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
             <AchievementsTimeline />
             <ImageGallery />
             <AboutSection />
+            <ContactInfo />
+            <ForDonation />
           </Layout.Content>
           <Footer />
         </Layout>

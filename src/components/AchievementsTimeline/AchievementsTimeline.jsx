@@ -1,9 +1,10 @@
 import React from "react";
 import { Card, Timeline } from "antd";
 
-const TimelineCard = ({ title, children }) => {
+const TimelineCard = ({ title, id, children }) => {
   return (
     <Card
+      id={id}
       title={title}
       styles={{
         header: {
@@ -38,8 +39,8 @@ const AchievementsTimeline = () => {
         items={[
           {
             children: (
-              <TimelineCard title={"Year 2024"}>
-                <ul id="achivements-2024">
+              <TimelineCard title={"Year 2024"} id="achivements-2024">
+                <ul>
                   <li>Distrubuted 17 sets of books to 2024 batch.</li>
                   <li>Paying Mess bill for 14 students </li>
                   <li>
@@ -66,8 +67,8 @@ const AchievementsTimeline = () => {
           },
           {
             children: (
-              <TimelineCard title="Year 2023">
-                <ul id="achivements-2023">
+              <TimelineCard title="Year 2023" id="achivements-2023">
+                <ul>
                   <li>Distrubuted 07 sets of books to 2023 batch</li>
                   <li>Paid Mess bill for 09 students</li>
                   <li>Paid exam fee for 07 students </li>
@@ -77,8 +78,8 @@ const AchievementsTimeline = () => {
           },
           {
             children: (
-              <TimelineCard title="Year 2022">
-                <ul id="achivements-2022">
+              <TimelineCard title="Year 2022" id="achivements-2022">
+                <ul>
                   <li>Distrubuted 10 sets of books to 2022 batch</li>
                   <li>Paid Mess bill for 12 students</li>
                   <li>Paid Exam fee for 09 students</li>
@@ -88,8 +89,8 @@ const AchievementsTimeline = () => {
           },
           {
             children: (
-              <TimelineCard title="Year 2021">
-                <ul id="achivements-2021">
+              <TimelineCard title="Year 2021" id="achivements-2021">
+                <ul>
                   <li>Distrubuted 10 sets of books to 2021 batch</li>
                   <li>Paid Mess bill for 03 students </li>
                   <li>Distribution of planks in Reading rooms</li>
@@ -99,8 +100,8 @@ const AchievementsTimeline = () => {
           },
           {
             children: (
-              <TimelineCard title={"Year 2020"}>
-                <ul id="achivements-2020">
+              <TimelineCard title={"Year 2020"} id="achivements-2020">
+                <ul>
                   <li>Distrubuted 10 sets of books to 2020 batch</li>
                 </ul>
               </TimelineCard>
