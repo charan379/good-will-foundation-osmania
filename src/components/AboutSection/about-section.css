@@ -1,0 +1,11 @@
+#about-us b {
+    color: #ff5733;
+}
+
+#about-us h4 {
+    color: #0870c5;
+}
+
+#about-us h4::before {
+    content: "# ";
+}

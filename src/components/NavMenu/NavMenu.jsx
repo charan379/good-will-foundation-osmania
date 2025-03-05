@@ -5,11 +5,19 @@ const NavLabel = ({ name, isLink, href }) => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center",
-      });
+      if (id === "about-us") {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      } else {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+          inline: "center",
+        });
+      }
     }
   };
   if (isLink && href) {
@@ -174,7 +182,9 @@ const NavMenu = () => {
         {
           key: "4",
           title: "Gallery",
-          label: <NavLabel name={"Gallery"} isLink={true} href={"image-gallery"} />,
+          label: (
+            <NavLabel name={"Gallery"} isLink={true} href={"image-gallery"} />
+          ),
         },
         {
           key: "5",
@@ -187,7 +197,11 @@ const NavMenu = () => {
           key: "6",
           title: "For Donations",
           label: (
-            <NavLabel name={"For Donations"} isLink={true} href={"for-donations"} />
+            <NavLabel
+              name={"For Donations"}
+              isLink={true}
+              href={"for-donations"}
+            />
           ),
         },
       ]}

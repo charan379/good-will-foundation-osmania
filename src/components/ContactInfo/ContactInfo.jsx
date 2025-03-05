@@ -16,6 +16,11 @@ const ContactInfo = () => {
         title: {
           textAlign: "left",
         },
+        header: {
+          background:
+            "linear-gradient(114deg, rgb(120, 88, 248) 0%, rgb(88, 165, 254) 100%)",
+          color: "#fff",
+        },
       }}
     >
       <Paragraph>

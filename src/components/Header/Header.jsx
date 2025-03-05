@@ -8,18 +8,21 @@ const Header = () => {
   return (
     <Layout.Header
       style={{
-        position: 'sticky',
+        position: "sticky",
         top: 0,
         zIndex: 1,
-        width: '100%',
-        display: 'flex',
-        alignItems: 'center',
+        width: "100%",
+        display: "flex",
+        alignItems: "center",
         justifyContent: "center",
         padding: "0 0px 0 0",
       }}
     >
       <Row
-        style={{ width: "100%", padding: isMobile ? "0px 0px" : "0px 15px 0px 10px" }}
+        style={{
+          width: "100%",
+          padding: isMobile ? "0px 0px" : "0px 15px 0px 10px",
+        }}
         justify={isMobile ? "center" : "space-between"}
         align={"middle"}
       >

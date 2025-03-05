@@ -9,6 +9,19 @@ import AboutSection from "./components/AboutSection";
 import ImageGallery from "./components/ImageGallery";
 import ContactInfo from "./components/ContactInfo";
 import ForDonation from "./components/ForDonation";
+// eslint-disable-next-line no-unused-vars
+import { motion} from "framer-motion";
+import BeneficiariesChart from "./components/BeneficiariesChart";
+
+const sections = [
+  <HeroContent />,
+  <AboutSection />,
+  <ImageGallery />,
+  <AchievementsTimeline />,
+  <ContactInfo />,
+  <ForDonation />,
+  <BeneficiariesChart />
+];
 
 function App() {
   return (
@@ -38,12 +51,18 @@ function App() {
               maxWidth: "100%",
             }}
           >
-            <HeroContent />
-            <AboutSection />
-            <ImageGallery />
-            <AchievementsTimeline />
-            <ContactInfo />
-            <ForDonation />
+            {sections.map((section) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0, y: 50 }} // Start invisible and move up
+                  whileInView={{ opacity: 1, y: 0 }} // Fade in when visible
+                  viewport={{ once: false, amount: 0.05 }} // Trigger when 5% is visible
+                  transition={{ duration: 0.8 }}
+                >
+                  {section}
+                </motion.div>
+              );
+            })}
           </Layout.Content>
           <Footer />
         </Layout>

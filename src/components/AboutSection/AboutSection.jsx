@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Typography } from "antd";
 import Supporters from "../Supporters/Supporters";
+import "./about-section.css"
 
 const { Title, Paragraph } = Typography;
 
@@ -16,6 +17,11 @@ const AboutSection = () => {
         },
         body: {
           textAlign: "left",
+        },
+        header: {
+          background:
+            "linear-gradient(114deg, rgb(120, 88, 248) 0%, rgb(88, 165, 254) 100%)",
+          color: "#fff",
         },
       }}
     >
@@ -50,7 +56,7 @@ const AboutSection = () => {
         The roots of this innovative idea comes from the challenges faced by the
         students in the <b>MBBS first year</b> to meet their expenses and lack
         of scholarships on time . The initiative of this foundation taken by
-        <b>2019 batch Mbbs students</b> in the year 2020. It is idea of one of
+        <b> 2019 batch Mbbs students</b> in the year 2020. It is idea of one of
         student of 2019 batch named <b>ACHA SATHISH KUMAR</b> who was inspired
         by <b>Bhoodan Movement</b> which was initiated by <b>Vinoba Bhave</b>.
       </Paragraph>

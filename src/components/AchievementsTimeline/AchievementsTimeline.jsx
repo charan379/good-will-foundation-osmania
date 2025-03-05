@@ -1,25 +1,37 @@
 import React from "react";
 import { Card, Timeline } from "antd";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+import { CarryOutOutlined } from "@ant-design/icons";
 
 const TimelineCard = ({ title, id, children }) => {
   return (
-    <Card
-      id={id}
-      title={title}
-      styles={{
-        header: {
-          minHeight: 25,
-        },
-        title: {
-          textAlign: "left",
-        },
-        body: {
-          textAlign: "left",
-        },
-      }}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }} // Start invisible and move up
+      whileInView={{ opacity: 1, y: 0 }} // Fade in when visible
+      viewport={{ once: false, amount: 0.1 }} // Trigger when 5% is visible
+      transition={{ duration: 0.8 }}
     >
-      {children}
-    </Card>
+      <Card
+        id={id}
+        title={title}
+        styles={{
+          header: {
+            minHeight: 25,
+            paddingBottom: "10px",
+          },
+          title: {
+            textAlign: "left",
+            color: "blueviolet"
+          },
+          body: {
+            textAlign: "left",
+          },
+        }}
+      >
+        {children}
+      </Card>
+    </motion.div>
   );
 };
 const AchievementsTimeline = () => {
@@ -32,12 +44,19 @@ const AchievementsTimeline = () => {
         title: {
           textAlign: "left",
         },
+        header: {
+          background:
+            "linear-gradient(114deg, rgb(120, 88, 248) 0%, rgb(88, 165, 254) 100%)",
+          color: "#fff",
+        },
       }}
     >
       <Timeline
         mode="left"
+        reverse
         items={[
           {
+            dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title={"Year 2024"} id="achivements-2024">
                 <ul>
@@ -66,6 +85,7 @@ const AchievementsTimeline = () => {
             ),
           },
           {
+            dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2023" id="achivements-2023">
                 <ul>
@@ -77,6 +97,7 @@ const AchievementsTimeline = () => {
             ),
           },
           {
+            dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2022" id="achivements-2022">
                 <ul>
@@ -88,6 +109,7 @@ const AchievementsTimeline = () => {
             ),
           },
           {
+            dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2021" id="achivements-2021">
                 <ul>
@@ -99,6 +121,7 @@ const AchievementsTimeline = () => {
             ),
           },
           {
+            dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title={"Year 2020"} id="achivements-2020">
                 <ul>

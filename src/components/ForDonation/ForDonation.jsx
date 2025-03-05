@@ -16,9 +16,16 @@ const ForDonation = () => {
         title: {
           textAlign: "left",
         },
+        header: {
+          background:
+            "linear-gradient(114deg, rgb(120, 88, 248) 0%, rgb(88, 165, 254) 100%)",
+          color: "#fff",
+        },
       }}
     >
-      <Title level={4} style={{marginTop: "0"}}>Bank Account Details</Title>
+      <Title level={4} style={{ marginTop: "0" }}>
+        Bank Account Details
+      </Title>
       <Paragraph>
         <b>Name:</b> Good Will Foundation <br />
         <b>A/c No:</b> 41832347362 <br />
