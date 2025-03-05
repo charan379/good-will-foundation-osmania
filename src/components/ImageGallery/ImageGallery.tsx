@@ -10,54 +10,54 @@ const contentStyle: React.CSSProperties = {
 };
 
 const images = [{
-    src: "",
-    alt: "",
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG_20250304_104956_023.jpg",
+    alt: "IMG_20250304_104956_023.jpg",
     id: 1
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0020.jpg",
+    alt: "IMG-20250304-WA0020.jpg",
+    id: 2
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0018.jpg",
+    alt: "IMG-20250304-WA0018.jpg",
+    id: 3
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0022.jpg",
+    alt: "IMG-20250304-WA0022.jpg",
+    id: 4
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0028.jpg",
+    alt: "IMG-20250304-WA0028.jpg",
+    id: 5
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0038.jpg",
+    alt: "IMG-20250304-WA0038.jpg",
+    id: 6
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG_20250304_105025_287.jpg",
+    alt: "IMG_20250304_105025_287.jpg",
+    id: 7
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0039.jpg",
+    alt: "IMG-20250304-WA0039.jpg",
+    id: 8
 },
 {
-    src: "",
-    alt: "",
-    id: 1
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG-20250304-WA0019.jpg",
+    alt: "IMG-20250304-WA0019.jpg",
+    id: 9
 },
 {
-    src: "",
+    src: "/good-will-foundation-osmania/images/gallery/scope-any/IMG_20250304_104956_023.jpg",
     alt: "",
-    id: 1
+    id: 10
 }
 ]
 const ImageGallery = () => {
@@ -78,7 +78,8 @@ const ImageGallery = () => {
                     color: "#fff",
                 },
             }}>
-            <Carousel autoplay={{ dotDuration: true }} arrows infinite dots dotPosition='top'            >
+
+            <Carousel key={1} autoplay={{ dotDuration: true }} arrows infinite dots dotPosition='top'>
                 <div>
                     <h3 style={contentStyle}>1</h3>
                 </div>
@@ -92,14 +93,20 @@ const ImageGallery = () => {
                     <h3 style={contentStyle}>4</h3>
                 </div>
             </Carousel>
-            <Flex gap={5} wrap justify='center' align='center'>
-                {images.map((image) => {
-                    return (
-                        <Image key={image.id} src={image.src} alt={image.alt} width={140} height={140} ></Image>
-                    )
-                })}
-            </Flex>
-        </Card>
+
+            <Carousel autoplay={false} arrows>
+                <div style={contentStyle}>
+                    <Flex gap={5} wrap justify='center' align='center'>
+                        {images.map((image) => {
+                            return (
+                                <Image key={image.id} src={image.src} alt={image.alt} width={140} height={140} ></Image>
+                            )
+                        })}
+                    </Flex>
+                </div>
+            </Carousel>
+
+        </Card >
 
     )
 }
