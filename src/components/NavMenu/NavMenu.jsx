@@ -1,7 +1,10 @@
 import { Menu, Typography } from "antd";
 import useResponsive from "../../hooks/useResponsive";
+import useNavMobileDrawer from "../../context/useNavMobileDrawer";
 
 const NavLabel = ({ name, isLink, href }) => {
+  const { closeDrawer, isOpen } = useNavMobileDrawer();
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,12 +23,20 @@ const NavLabel = ({ name, isLink, href }) => {
       }
     }
   };
+
+  const handleOnClick = () => {
+    if (isOpen) {
+      closeDrawer();
+    }
+    setTimeout(() => {
+      scrollToSection(href);
+    }, 100);
+  };
+
   if (isLink && href) {
     return (
       <>
-        <Typography.Link onClick={() => scrollToSection(href)}>
-          {name}
-        </Typography.Link>
+        <Typography.Link onClick={handleOnClick}>{name}</Typography.Link>
       </>
     );
   } else {

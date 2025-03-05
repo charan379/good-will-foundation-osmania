@@ -1,10 +1,16 @@
-import { Col, Image, Layout, Row } from "antd";
+import { Button, Col, Image, Layout, Row } from "antd";
 import NavMenu from "../NavMenu";
-import NavMobileDrawer from "../NavMobileDrawer";
+// import NavMobileDrawer from "../NavMobileDrawer";
 import useResponsive from "../../hooks/useResponsive";
+// import { useState } from "react";
+import { MenuOutlined } from "@ant-design/icons";
+import useNavMobileDrawer from "../../context/useNavMobileDrawer";
 
 const Header = () => {
   const { isMobile } = useResponsive();
+
+  const { toggleDrawer } = useNavMobileDrawer();
+
   return (
     <Layout.Header
       style={{
@@ -39,7 +45,12 @@ const Header = () => {
           <NavMenu />
         </Col>
         <Col xs={4} lg={0}>
-          <NavMobileDrawer />
+          <Button
+            type="text"
+            onClick={toggleDrawer}
+            icon={<MenuOutlined style={{ fontSize: "22px" }} />}
+            size="large"
+          />
         </Col>
         <Col xs={0} lg={4} style={{ textAlign: "right", padding: "0px" }}>
           <Image
