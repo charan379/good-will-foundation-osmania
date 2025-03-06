@@ -65,7 +65,7 @@ function App() {
                       key={index}
                       initial={{ opacity: 0, y: 50 }} // Start invisible and move up
                       whileInView={{ opacity: 1, y: 0 }} // Fade in when visible
-                      viewport={{ once: false, amount: 0.1 }} // Trigger when 5% is visible
+                      viewport={{ once: false, amount: 0.05 }} // Trigger when 5% is visible
                       transition={{ duration: 0.8 }}
                     >
                       {section}

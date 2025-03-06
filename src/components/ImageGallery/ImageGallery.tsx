@@ -213,7 +213,7 @@ const ImageGallery = () => {
                 dotPosition="bottom"
                 style={{
                     maxWidth: "100%",
-                    height: "400px",
+                    maxHeight: "400px",
                     borderRadius: "12px", // Smooth rounded corners
                     overflow: "hidden", // Prevents overflow issues
                 }}
@@ -282,12 +282,21 @@ const ImageGallery = () => {
             </Carousel>
 
             <div style={contentStyle}>
-                <Flex gap={5} wrap justify='center' align='center'>
+                <Flex gap={5} wrap justify="center" align="center">
                     <Image.PreviewGroup>
-                        {images.slice(0, visibleCount).map((image) => {
-                            return (
-                                <Image key={image.id} src={image.src} alt={image.alt} width={isMobile ? "auto" : 160} height={isMobile ? "auto" : 160}
-                                    loading='lazy'
+                        {images.slice(0, visibleCount).map((image, index) => (
+                            <div
+                                key={image.id}
+                                style={{
+                                    animation: index >= visibleCount - 10 ? "fadeInScale 0.6s ease-in-out" : "none",
+                                }}
+                            >
+                                <Image
+                                    src={image.src}
+                                    alt={image.alt}
+                                    width={isMobile ? "auto" : 160}
+                                    height={isMobile ? "auto" : 160}
+                                    loading="lazy"
                                     placeholder={
                                         <div
                                             style={{
@@ -298,28 +307,44 @@ const ImageGallery = () => {
                                                 animation: "loading 1.5s infinite",
                                                 display: "flex",
                                                 justifyContent: "center",
-                                                alignItems: "center"
+                                                alignItems: "center",
                                             }}
-                                        ><LoadingOutlined spin /></div>
+                                        >
+                                            <LoadingOutlined spin />
+                                        </div>
                                     }
                                     style={{
-                                        objectFit: "cover", // Ensures image fills area elegantly
-                                        borderRadius: "6px", // Consistent rounded corners
+                                        objectFit: "cover",
+                                        borderRadius: "6px",
                                     }}
-                                ></Image>
-                            )
-                        })}
+                                />
+                            </div>
+                        ))}
                     </Image.PreviewGroup>
                 </Flex>
 
                 {/* Show "Load More" Button if there are more images to load */}
                 {visibleCount < images.length && (
                     <Flex justify="center" style={{ marginTop: "20px" }}>
-                        <Button type="primary" onClick={loadMore}>
-                            Load More
-                        </Button>
+                        <Button type="primary" onClick={loadMore}>Load More</Button>
                     </Flex>
                 )}
+
+                <style>
+                    {`
+          @keyframes fadeInScale {
+            from {
+              opacity: 0;
+              transform: scale(0.9);
+            }
+            to {
+              opacity: 1;
+              transform: scale(1);
+            }
+          }
+        `}
+                </style>
+
             </div>
 
         </Card >
