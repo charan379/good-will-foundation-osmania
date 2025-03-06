@@ -53,12 +53,12 @@ const AboutSection = () => {
       </ul>
 
       <Title level={4} id="how-it-all-began">
-        How it all began
+        How It All Began
       </Title>
       <Paragraph>
         The roots of this innovative idea came from the challenges faced by the
         students in the <b>MBBS first year </b> to meet their expenses and
-        insuffucient timely scholarship support. <br />
+        insufficient timely scholarship support. <br />
         This Foundation was initiated by the <b>MBBS Students</b> of{" "}
         <b>2019 Batch </b>
         in the year <b>2020</b> who were inspired by <b>Bhoodan Movement </b>
@@ -71,45 +71,35 @@ const AboutSection = () => {
       </Title>
       <Paragraph>
         <ul
-          className="how-we-help"
           style={{
-            listStyleType: "none",
+            listStyleType: "disc",
           }}
         >
           <li>
-            {" "}
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
-            </svg>
-            <span>Distribution of Books.</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
-            </svg>
-            <span>Distribution of Bone Sets.</span>
-          </li>
-          <li>
-            {" "}
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
-            </svg>
-            <span>Paying Mess Fees for the entire academic year.</span>
-          </li>
-          <li>
-            {" "}
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
-            </svg>
-            <span>Paying Exam Fees for the entire academic year.</span>
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
-            </svg>
             <span>
-              Experienced Professionals provide guidance to support students in
-              navigating their academic journey and emotional well-being.
+              Distribution of <b>Books</b>.
+            </span>
+          </li>
+          <li>
+            <span>
+              Distribution of <b>Bone Sets</b>.
+            </span>
+          </li>
+          <li>
+            <span>
+              Paying <b>Mess Fees</b> for the entire academic year.
+            </span>
+          </li>
+          <li>
+            <span>
+              Paying <b>Exam Fees</b>.
+            </span>
+          </li>
+          <li>
+            <span>
+              <b>Mentorship and Counseling: </b> Experienced Professionals
+              provide guidance to support students in navigating their academic
+              journey and emotional well-being.
             </span>
           </li>
         </ul>
@@ -118,8 +108,8 @@ const AboutSection = () => {
         Mission Statement
       </Title>
       <Paragraph>
-        The foundation believes " Although we can do so little but together we
-        can support and tackle those challenges ".
+        Our foundation believes "Although we can do so little but together we
+        can support and tackle those challenges".
       </Paragraph>
     </Card>
   );

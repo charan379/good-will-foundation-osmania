@@ -59,9 +59,16 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title={"Year 2024"} id="achivements-2024">
                 <ul>
-                  <li>Distributed 17 sets of books to the MBBS 2024 Batch.</li>
-                  <li>Paying Mess bill for 14 students.</li>
-                  <li>Distributed 06 & half Bone sets.</li>
+                  <li>
+                    Distributed <b>17</b> sets of books to the MBBS <b>2024</b>{" "}
+                    Batch.
+                  </li>
+                  <li>
+                    Paying Mess bill for <b>14</b> students.
+                  </li>
+                  <li>
+                    Distributed <b>06 & half</b> Bone sets.
+                  </li>
                   <li>
                     <Typography.Title level={4} style={{ margin: 0 }}>
                       Good Will Foundation – Telangana is a Statewide Initiative
@@ -71,22 +78,44 @@ const AchievementsTimeline = () => {
                     </Typography.Title>
                     <Typography.Text>
                       We have successfully distributed 1st-year MBBS book sets
-                      to needy students across various medical colleges in
-                      Telangana for the 2024 batch.
+                      to the needy students across various medical colleges in
+                      Telangana for the <b>MBBS 2024</b> batch.
                     </Typography.Text>
                     <ol>
-                      <li> Kakatiya Medical College - 06 sets.</li>
-                      <li> GMC karimnagar - 06 sets. </li>
-                      <li> GMC siddipet - 05 sets.</li>
-                      <li> GMC jagityal - 05 sets.</li>
-                      <li>SIMS Ramagundam - 05 sets.</li>
-                      <li>GMC Nagarkurnool - 05 sets.</li>
-                      <li>GMC Kamareddy - 03 sets.</li>
-                      <li>GMC Mancherial - 01 set.</li>
-                      <li>Surabhi Institute of Medical Sciences - 01 set.</li>
+                      <li>
+                        {" "}
+                        Kakatiya Medical College - <b>06</b> sets.
+                      </li>
+                      <li>
+                        {" "}
+                        GMC karimnagar - <b>06</b> sets.{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        GMC siddipet - <b>05</b> sets.
+                      </li>
+                      <li>
+                        {" "}
+                        GMC jagityal - <b>05</b> sets.
+                      </li>
+                      <li>
+                        SIMS Ramagundam - <b>05</b> sets.
+                      </li>
+                      <li>
+                        GMC Nagarkurnool - <b>05</b> sets.
+                      </li>
+                      <li>
+                        GMC Kamareddy - <b>03</b> sets.
+                      </li>
+                      <li>
+                        GMC Mancherial - <b>01</b> set.
+                      </li>
+                      <li>
+                        Surabhi Institute of Medical Sciences - <b>01</b> set.
+                      </li>
                       <li>
                         Dr.Patnam Mahender Reddy institute of Medical Sciences -
-                        01 set.{" "}
+                        <b>01</b> set.{" "}
                       </li>
                     </ol>
                     <Typography.Title level={5} style={{ margin: 0 }}>
@@ -103,10 +132,19 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title="Year 2023" id="achivements-2023">
                 <ul>
-                  <li>Distributed 07 sets of books to the MBBS 2023 Batch.</li>
-                  <li>Paid Mess bill for 09 students.</li>
-                  <li>Paid exam fee for 07 students.</li>
-                  <li>Distributed 06 Bone Sets.</li>
+                  <li>
+                    Distributed <b>07</b> sets of books to the MBBS <b>2023</b>{" "}
+                    Batch.
+                  </li>
+                  <li>
+                    Paid Mess bill for <b>09</b> students.
+                  </li>
+                  <li>
+                    Paid exam fee for <b>07</b> students.
+                  </li>
+                  <li>
+                    Distributed <b>06</b> Bone Sets.
+                  </li>
                 </ul>{" "}
               </TimelineCard>
             ),
@@ -116,10 +154,19 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title="Year 2022" id="achivements-2022">
                 <ul>
-                  <li>Distributed 10 sets of books to the MBBS 2022 Batch.</li>
-                  <li>Paid Mess bill for 12 students.</li>
-                  <li>Paid Exam fee for 09 students.</li>
-                  <li>Distributed 05 Bone Sets.</li>
+                  <li>
+                    Distributed <b>10</b> sets of books to the MBBS <b>2022</b>{" "}
+                    Batch.
+                  </li>
+                  <li>
+                    Paid Mess bill for <b>12</b> students.
+                  </li>
+                  <li>
+                    Paid Exam fee for <b>09</b> students.
+                  </li>
+                  <li>
+                    Distributed <b>05</b> Bone Sets.
+                  </li>
                 </ul>
               </TimelineCard>
             ),
@@ -129,9 +176,16 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title="Year 2021" id="achivements-2021">
                 <ul>
-                  <li>Distributed 10 sets of books to 2021 batch.</li>
-                  <li>Paid Mess bill for 03 students.</li>
-                  <li>Distributed 04 Bone Sets. </li>
+                  <li>
+                    Distributed <b>10</b> sets of books to the MBBS <b>2021</b>{" "}
+                    Batch.
+                  </li>
+                  <li>
+                    Paid Mess bill for <b>03</b> students.
+                  </li>
+                  <li>
+                    Distributed <b>04</b> Bone Sets.{" "}
+                  </li>
                   <li>Distribution of planks in Reading rooms.</li>
                 </ul>{" "}
               </TimelineCard>
@@ -142,9 +196,16 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title={"Year 2020"} id="achivements-2020">
                 <ul>
-                  <li>Distributed 10 sets of books to 2020 batch</li>
-                  <li>Paid Mess fees for 06 Students.</li>
-                  <li>Distributed 04 Bone sets.</li>
+                  <li>
+                    Distributed <b>10</b> sets of books to the MBBS <b>2020</b>{" "}
+                    Batch
+                  </li>
+                  <li>
+                    Paid Mess fees for <b>06</b> Students.
+                  </li>
+                  <li>
+                    Distributed <b>04</b> Bone sets.
+                  </li>
                 </ul>
               </TimelineCard>
             ),

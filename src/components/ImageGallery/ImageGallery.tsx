@@ -1,15 +1,12 @@
-import { Card, Carousel, Flex, Image } from 'antd';
-import React from 'react'
+import { Button, Card, Carousel, Flex, Image } from 'antd';
+import React, { useState } from 'react'
 import useResponsive from '../../hooks/useResponsive';
-import { LeftCircleTwoTone, LeftOutlined, LeftSquareTwoTone, RightCircleOutlined, RightOutlined, RightSquareOutlined } from '@ant-design/icons';
+import { LoadingOutlined } from '@ant-design/icons';
 
 
 const contentStyle: React.CSSProperties = {
-    height: '460px',
     color: '#fff',
-    lineHeight: '460px',
     textAlign: 'center',
-    background: '#364d79',
 };
 
 const images = [{
@@ -61,6 +58,66 @@ const images = [{
     src: "/images/gallery/scope-any/IMG_20250304_104956_023.jpg",
     alt: "",
     id: 10
+},
+{
+    src: "/images/gallery/scope-any/landscape/1.jpeg",
+    alt: "11",
+    id: 11
+},
+{
+    src: "/images/gallery/scope-any/potrait/1.jpeg",
+    alt: "12",
+    id: 12
+},
+{
+    src: "/images/gallery/scope-any/landscape/2.jpeg",
+    alt: "13",
+    id: 13
+},
+{
+    src: "/images/gallery/scope-any/potrait/2.jpeg",
+    alt: "14",
+    id: 14
+},
+{
+    src: "/images/gallery/scope-any/landscape/3.jpeg",
+    alt: "15",
+    id: 15
+},
+{
+    src: "/images/gallery/scope-any/potrait/3.jpeg",
+    alt: "16",
+    id: 16
+},
+{
+    src: "/images/gallery/scope-any/landscape/4.jpeg",
+    alt: "17",
+    id: 17
+},
+{
+    src: "/images/gallery/scope-any/potrait/4.jpeg",
+    alt: "18",
+    id: 18
+},
+{
+    src: "/images/gallery/scope-any/landscape/5.jpeg",
+    alt: "19",
+    id: 19
+},
+{
+    src: "/images/gallery/scope-any/potrait/5.jpeg",
+    alt: "20",
+    id: 20
+},
+{
+    src: "/images/gallery/scope-any/landscape/6.jpeg",
+    alt: "21",
+    id: 21
+},
+{
+    src: "/images/gallery/scope-any/potrait/6.jpeg",
+    alt: "22",
+    id: 22
 }
 ]
 
@@ -116,6 +173,12 @@ const ImageGallery = () => {
 
     const { isMobile } = useResponsive();
 
+    const [visibleCount, setVisibleCount] = useState(5); // Show first 10 images
+
+    const loadMore = () => {
+        setVisibleCount((prev) => prev + 5); // Load 10 more each time
+    };
+
     return (
         <Card
             variant="borderless"
@@ -168,6 +231,21 @@ const ImageGallery = () => {
                                     objectFit: "cover", // Ensures image fills area elegantly
                                     borderRadius: "6px", // Consistent rounded corners
                                 }}
+                                loading='lazy'
+                                placeholder={
+                                    <div
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            background: "linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)",
+                                            backgroundSize: "200% 100%",
+                                            animation: "loading 1.5s infinite",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center"
+                                        }}
+                                    ><LoadingOutlined spin /></div>
+                                }
                             />
                         </div>
                     ))
@@ -183,18 +261,47 @@ const ImageGallery = () => {
                                     objectFit: "cover",
                                     borderRadius: "6px",
                                 }}
+                                loading='lazy'
+                                placeholder={
+                                    <div
+                                        style={{
+                                            width: "100%",
+                                            height: "100%",
+                                            background: "linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)",
+                                            backgroundSize: "200% 100%",
+                                            animation: "loading 1.5s infinite",
+                                            display: "flex",
+                                            justifyContent: "center",
+                                            alignItems: "center"
+                                        }}
+                                    ><LoadingOutlined spin /></div>
+                                }
                             />
                         </div>
                     ))}
             </Carousel>
 
-
-            <Carousel autoplay={false} arrows={false} dots={false}>
-                <div style={contentStyle}>
-                    <Flex gap={5} wrap justify='center' align='center'>
-                        {images.map((image) => {
+            <div style={contentStyle}>
+                <Flex gap={5} wrap justify='center' align='center'>
+                    <Image.PreviewGroup>
+                        {images.slice(0, visibleCount).map((image) => {
                             return (
                                 <Image key={image.id} src={image.src} alt={image.alt} width={isMobile ? "auto" : 160} height={isMobile ? "auto" : 160}
+                                    loading='lazy'
+                                    placeholder={
+                                        <div
+                                            style={{
+                                                width: "100%",
+                                                height: "100%",
+                                                background: "linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%)",
+                                                backgroundSize: "200% 100%",
+                                                animation: "loading 1.5s infinite",
+                                                display: "flex",
+                                                justifyContent: "center",
+                                                alignItems: "center"
+                                            }}
+                                        ><LoadingOutlined spin /></div>
+                                    }
                                     style={{
                                         objectFit: "cover", // Ensures image fills area elegantly
                                         borderRadius: "6px", // Consistent rounded corners
@@ -202,9 +309,18 @@ const ImageGallery = () => {
                                 ></Image>
                             )
                         })}
+                    </Image.PreviewGroup>
+                </Flex>
+
+                {/* Show "Load More" Button if there are more images to load */}
+                {visibleCount < images.length && (
+                    <Flex justify="center" style={{ marginTop: "20px" }}>
+                        <Button type="primary" onClick={loadMore}>
+                            Load More
+                        </Button>
                     </Flex>
-                </div>
-            </Carousel>
+                )}
+            </div>
 
         </Card >
 

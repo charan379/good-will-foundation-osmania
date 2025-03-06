@@ -6,7 +6,7 @@ const { Paragraph } = Typography;
 const supportersData = [
   "Dr. P. Shashikala Reddy Ma'am\nMBBS, MD (Microbiology), Former Principal, Osmania Medical College - provided moral support and encouragement to strengthen the foundation's success.",
 
-  "Dr. Narendra Kumar ARE Sir\nMBBS, M.S(Gen.Surg), MCH (Ped.Surg),\nDirector of Medical Education (DME)",
+  "Dr. A. Narendra Kumar Sir\nMBBS, M.S(Gen.Surg), MCH (Ped.Surg),\nDirector of Medical Education (DME)",
 
   "Dr. R. Nagarjuna Chary Sir\nMBBS, MD (Pathology) - Principal of Osmania Medical College",
 
@@ -16,7 +16,7 @@ const supportersData = [
 
   "Dr. G. Kiranmayi Ma'am\nMBBS, MD (Social and Preventive Medicine)",
 
-  "Dr. N. Jaya Ma'am\nMBBS, MD (Biochemistry)\nFormer Vice Principal, Osmania Medical College",
+  "Dr. N. Jaya Ma'am\nMBBS, MD (Biochemistry),\nFormer Vice Principal, Osmania Medical College",
 
   "Department of Pharmacology",
 

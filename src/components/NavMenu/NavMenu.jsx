@@ -90,7 +90,7 @@ const NavMenu = () => {
             },
             {
               key: "2.4",
-              title: "How it all began",
+              title: "How It All Began",
               label: (
                 <NavLabel
                   name={"How it all began"}
@@ -229,7 +229,7 @@ const NavMenu = () => {
           ),
         },
         {
-          key: "6",
+          key: "9",
           title: "Contact Us",
           label: (
             <NavLabel name={"Contact Us"} isLink={true} href={"contact-us"} />
