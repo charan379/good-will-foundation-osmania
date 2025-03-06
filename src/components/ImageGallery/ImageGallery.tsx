@@ -244,7 +244,9 @@ const ImageGallery = () => {
                                             justifyContent: "center",
                                             alignItems: "center"
                                         }}
-                                    ><LoadingOutlined spin /></div>
+                                    >
+                                        <LoadingOutlined spin style={{ fontSize: "32px", color: "#1565C0" }} />
+                                    </div>
                                 }
                             />
                         </div>
@@ -274,7 +276,9 @@ const ImageGallery = () => {
                                             justifyContent: "center",
                                             alignItems: "center"
                                         }}
-                                    ><LoadingOutlined spin /></div>
+                                    >
+                                        <LoadingOutlined spin style={{ fontSize: "32px", color: "#1565C0" }} />
+                                    </div>
                                 }
                             />
                         </div>
@@ -310,7 +314,7 @@ const ImageGallery = () => {
                                                 alignItems: "center",
                                             }}
                                         >
-                                            <LoadingOutlined spin />
+                                            <LoadingOutlined spin style={{ fontSize: "32px", color: "#1565C0" }} />
                                         </div>
                                     }
                                     style={{
