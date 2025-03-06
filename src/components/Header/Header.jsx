@@ -1,10 +1,11 @@
-import { Button, Col, Image, Layout, Row } from "antd";
+import { Button, Col, Flex, Image, Layout, Row } from "antd";
 import NavMenu from "../NavMenu";
 // import NavMobileDrawer from "../NavMobileDrawer";
 import useResponsive from "../../hooks/useResponsive";
 // import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import useNavMobileDrawer from "../../context/useNavMobileDrawer";
+import NavTitle from "../NavTitle";
 
 const Header = () => {
   const { isMobile } = useResponsive();
@@ -27,19 +28,25 @@ const Header = () => {
       <Row
         style={{
           width: "100%",
-          padding: isMobile ? "0px 0px" : "0px 15px 0px 10px",
+          padding: isMobile ? "0px 10px 0px 0px" : "0px 15px 0px 10px",
         }}
-        justify={isMobile ? "center" : "space-between"}
+        justify={"space-between"}
         align={"middle"}
       >
-        <Col xs={22} lg={2} style={{ textAlign: "left", padding: "0px" }}>
-          <Image
-            preview={false}
-            width={65}
-            height={65}
-            alt="good-will-foundation-osmania-logo"
-            src="/images/logo/good-will-foundation-logo.png"
-          />
+        <Col xs={18} lg={6} style={{ textAlign: "left", padding: "0px" }}>
+          <Flex
+          justify="flex-start"
+          align="center"
+          >
+            <Image
+              preview={false}
+              width={65}
+              height={65}
+              alt="good-will-foundation-osmania-logo"
+              src="/images/logo/good-will-foundation-logo.png"
+            />
+            <NavTitle />
+          </Flex>
         </Col>
         <Col xs={0} lg={16}>
           <NavMenu />

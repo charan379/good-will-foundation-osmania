@@ -30,14 +30,13 @@ const ForDonation = () => {
 
       <Descriptions column={1} bordered={false}>
         <Descriptions.Item
-          label={<b>Bank Name</b>}
+          label={<b>Name</b>}
           styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
         >
-          <Text copyable={{ text: "State Bank Of India (SBI), OMC Branch" }}>
-            State Bank Of India (SBI), OMC Branch
+          <Text copyable={{ text: "Good Will Foundation" }}>
+            Good Will Foundation
           </Text>
         </Descriptions.Item>
-
         <Descriptions.Item
           label={<b>Account No.</b>}
           styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
@@ -50,6 +49,14 @@ const ForDonation = () => {
           styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
         >
           <Text copyable={{ text: "SBIN0021110" }}>SBIN0021110</Text>
+        </Descriptions.Item>
+        <Descriptions.Item
+          label={<b>Bank</b>}
+          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
+        >
+          <Text copyable={{ text: "State Bank Of India (SBI), OMC Branch" }}>
+            State Bank Of India (SBI), OMC Branch
+          </Text>
         </Descriptions.Item>
       </Descriptions>
     </Card>

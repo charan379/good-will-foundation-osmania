@@ -12,7 +12,8 @@ const NavMobileDrawerTitle = () => {
       style={{
         padding: "10px 0px 0px 5px",
         justifyContent: "space-between",
-        alignItems: "center",
+        alignItems: "start",
+        justifyItems: "center",
         position: "absolute",
         width: "100%",
         background: "#fff",
@@ -25,7 +26,7 @@ const NavMobileDrawerTitle = () => {
     >
       <div>
         <Typography.Title
-          level={4}
+          level={5}
           style={{
             margin: 0,
             color: "#1565C0",
@@ -67,7 +68,7 @@ const NavMobileDrawer = () => {
       collapsed={!isOpen}
       onCollapse={closeDrawer}
       collapsible
-      width={"85%"}
+      width={"87%"}
       style={{
         textAlign: "left",
         overflow: "hidden", // Hide full overflow, NavMenu will handle scrolling

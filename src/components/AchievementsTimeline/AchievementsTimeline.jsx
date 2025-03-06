@@ -129,7 +129,7 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title="Year 2021" id="achivements-2021">
                 <ul>
-                  <li>Distrubuted 10 sets of books to 2021 batch.</li>
+                  <li>Distributed 10 sets of books to 2021 batch.</li>
                   <li>Paid Mess bill for 03 students.</li>
                   <li>Distributed 04 Bone Sets. </li>
                   <li>Distribution of planks in Reading rooms.</li>
@@ -142,7 +142,7 @@ const AchievementsTimeline = () => {
             children: (
               <TimelineCard title={"Year 2020"} id="achivements-2020">
                 <ul>
-                  <li>Distrubuted 10 sets of books to 2020 batch</li>
+                  <li>Distributed 10 sets of books to 2020 batch</li>
                   <li>Paid Mess fees for 06 Students.</li>
                   <li>Distributed 04 Bone sets.</li>
                 </ul>

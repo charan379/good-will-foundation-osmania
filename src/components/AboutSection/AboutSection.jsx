@@ -38,7 +38,7 @@ const AboutSection = () => {
       </Title>
       <ul>
         <li>
-          To Ensure no talented and deserving first-year MBBS student is
+          To Ensure that no talented and deserving first-year MBBS student is
           deprived of education due to financial constraints.
         </li>
         <li>
@@ -47,7 +47,8 @@ const AboutSection = () => {
         </li>
         <li>
           {" "}
-          To Empower students to focus on studies without financial worries.
+          To focus on their studies without their constant worry of Financial
+          pressures .
         </li>
       </ul>
 
@@ -57,12 +58,12 @@ const AboutSection = () => {
       <Paragraph>
         The roots of this innovative idea came from the challenges faced by the
         students in the <b>MBBS first year </b> to meet their expenses and
-        insuffucient timely scolarship support. <br />
+        insuffucient timely scholarship support. <br />
         This Foundation was initiated by the <b>MBBS Students</b> of{" "}
         <b>2019 Batch </b>
         in the year <b>2020</b> who were inspired by <b>Bhoodan Movement </b>
         which was pioneered by <b>Vinoba Bhave </b> and also by{" "}
-        <b>Garibi Hato Desh Bachao </b>
+        <b>Garibi Hatao Desh Bachao </b>
         programme by our former Prime Minister <b>Indira Gandhi </b>. <br />
       </Paragraph>
       <Title level={4} id="how-we-help">
@@ -80,36 +81,35 @@ const AboutSection = () => {
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 12L12 22L2 12L12 2Z" />
             </svg>
-            <span> Distribution of Books</span>
+            <span>Distribution of Books.</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 12L12 22L2 12L12 2Z" />
             </svg>
-            <span>Distribution of Bone Sets</span>
+            <span>Distribution of Bone Sets.</span>
           </li>
           <li>
             {" "}
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 12L12 22L2 12L12 2Z" />
             </svg>
-            <span>Paying Mess fees</span>
+            <span>Paying Mess Fees for the entire academic year.</span>
           </li>
           <li>
             {" "}
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L22 12L12 22L2 12L12 2Z" />
             </svg>
-            <span>Paying Exam fees</span>
+            <span>Paying Exam Fees for the entire academic year.</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+              <path d="M12 2L22 12L12 22L2 12L12 2Z" />
             </svg>
             <span>
-              Mentorship and Counseling: Guidance from experienced professionals
-              to help students manage their academic journey and emotional
-              well-being.
+              Experienced Professionals provide guidance to support students in
+              navigating their academic journey and emotional well-being.
             </span>
           </li>
         </ul>
