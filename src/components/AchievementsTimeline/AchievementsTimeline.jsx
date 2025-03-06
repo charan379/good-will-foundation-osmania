@@ -70,17 +70,14 @@ const AchievementsTimeline = () => {
                     Distributed <b>06 & half</b> Bone sets.
                   </li>
                   <li>
-                    <Typography.Title level={4} style={{ margin: 0 }}>
-                      Good Will Foundation – Telangana is a Statewide Initiative
-                    </Typography.Title>
-                    <Typography.Title level={5} style={{ margin: 0 }}>
-                      Good Will Foundation (GWF) – Osmania Medical College .
-                    </Typography.Title>
-                    <Typography.Text>
-                      We have successfully distributed 1st-year MBBS book sets
-                      to the needy students across various medical colleges in
-                      Telangana for the <b>MBBS 2024</b> batch.
-                    </Typography.Text>
+                    Good Will Foundation (GWF) – Osmania Medical College played
+                    a pivotal role in expanding GWF into a statewide initiative
+                    across Telangana.
+                  </li>
+                  <li>
+                    We have successfully distributed 1st-year MBBS book sets to
+                    the needy students across various medical colleges in
+                    Telangana for the <b>MBBS 2024</b> batch.
                     <ol>
                       <li>
                         {" "}
@@ -118,10 +115,11 @@ const AchievementsTimeline = () => {
                         <b>01</b> set.{" "}
                       </li>
                     </ol>
-                    <Typography.Title level={5} style={{ margin: 0 }}>
-                      Good will foundation OMC served as an inspiration to many
-                      other medical colleges.
-                    </Typography.Title>
+                  </li>
+                  <li>
+                    {" "}
+                    Good will foundation OMC served as an inspiration to many
+                    other medical colleges.
                   </li>
                 </ul>{" "}
               </TimelineCard>
