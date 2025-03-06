@@ -2,25 +2,17 @@ import { Menu, Typography } from "antd";
 import useResponsive from "../../hooks/useResponsive";
 import useNavMobileDrawer from "../../context/useNavMobileDrawer";
 
-const NavLabel = ({ name, isLink, href }) => {
+const NavLabel = ({ name, isLink, href, block, inline }) => {
   const { closeDrawer, isOpen } = useNavMobileDrawer();
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      if (id === "about-us") {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-        });
-      } else {
-        element.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-          inline: "center",
-        });
-      }
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: block ?? "center",
+        inline: inline ?? "center",
+      });
     }
   };
 
@@ -55,12 +47,12 @@ const NavMenu = () => {
         {
           key: "1",
           title: "Home",
-          label: <NavLabel name={"Home"} isLink={true} href={"home"} />,
+          label: <NavLabel name={"Home"} isLink={true} href={"home"} block={"start"} inline={"start"} />,
         },
         {
           key: "2",
           title: "About us",
-          label: <NavLabel name={"About Us"} isLink={true} href={"about-us"} />,
+          label: <NavLabel name={"About Us"} isLink={true} href={"our-goals"} block={"center"} inline={"center"} />,
           children: [
             {
               key: "2.1",
@@ -82,12 +74,12 @@ const NavMenu = () => {
             },
             {
               key: "2.4",
-              title: "How the foundation started",
+              title: "How it all began",
               label: (
                 <NavLabel
-                  name={"How the foundation started"}
+                  name={"How it all began"}
                   isLink={true}
-                  href={"how-the-foundation-started"}
+                  href={"how-it-all-began"}
                 />
               ),
             },
@@ -115,22 +107,33 @@ const NavMenu = () => {
             },
             {
               key: "2.7",
-              title: "Why We do it",
+              title: "Mission Statement",
               label: (
                 <NavLabel
-                  name={"Why we do it"}
+                  name={"Mission Statement"}
                   isLink={true}
-                  href={"why-we-do-it"}
+                  href={"mission-statement"}
                 />
               ),
             },
           ],
         },
         {
+          key: "7",
+          title: "Our Supporters",
+          label: (
+            <NavLabel
+              name={"Our Supporters"}
+              isLink={true}
+              href={"our-supporters"}
+            />
+          ),
+        },
+        {
           key: "3",
           title: "Achivements",
           label: (
-            <NavLabel name={"Achivements"} isLink={true} href={"achivements"} />
+            <NavLabel name={"Achivements"} isLink={true} href={"achivements-2020"} block={"center"} inline={"center"}/>
           ),
           children: [
             {
@@ -194,7 +197,7 @@ const NavMenu = () => {
           key: "4",
           title: "Gallery",
           label: (
-            <NavLabel name={"Gallery"} isLink={true} href={"image-gallery"} />
+            <NavLabel name={"Gallery"} isLink={true} href={"image-gallery"} block={"start"} inline={"start"} />
           ),
         },
         {
@@ -206,10 +209,10 @@ const NavMenu = () => {
         },
         {
           key: "6",
-          title: "For Donations",
+          title: "Donate and Support",
           label: (
             <NavLabel
-              name={"For Donations"}
+              name={"Donate and Support"}
               isLink={true}
               href={"for-donations"}
             />

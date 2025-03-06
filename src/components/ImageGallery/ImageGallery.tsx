@@ -63,9 +63,9 @@ const images = [{
 const ImageGallery = () => {
     return (
         <Card
-            id="image-gallery"
             variant="borderless"
-            title="Image Gallery"
+            title={<span id="image-gallery"
+            >Image Gallery</span>}
             style={{ maxWidth: "98dvw" }}
 
             styles={{

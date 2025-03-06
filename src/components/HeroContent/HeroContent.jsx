@@ -30,11 +30,28 @@ const HeroContent = () => {
         id="home"
       >
         <Col sm={24} lg={12}>
-          <Typography.Title style={{ color: "#fff", letterSpacing: 1 }}>
+          <Typography.Title
+            level={1}
+            style={{
+              margin: 0,
+              color: "#fff",
+              letterSpacing: 1,
+            }}
+          >
             Good Will Foundation
           </Typography.Title>
+          <Typography.Text
+            style={{
+              margin: 0,
+              color: "#fff",
+              fontWeight: 500,
+              letterSpacing: "0.5px",
+            }}
+          >
+            Osmania Medical College
+          </Typography.Text>
           <Typography.Paragraph style={{ color: "#fff", margin: "20px 0" }}>
-            The <b>Good Will Foundation</b> is a charitable student-organized
+            <b>Good Will Foundation</b> is a student-organized
             trust dedicated to supporting financially underprivileged first-year
             MBBS students. Our mission is to provide financial aid, resources,
             and a platform for students to pursue their dreams of becoming

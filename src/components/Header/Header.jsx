@@ -32,7 +32,7 @@ const Header = () => {
         justify={isMobile ? "center" : "space-between"}
         align={"middle"}
       >
-        <Col xs={20} lg={4} style={{ textAlign: "left", padding: "0px" }}>
+        <Col xs={22} lg={2} style={{ textAlign: "left", padding: "0px" }}>
           <Image
             preview={false}
             width={65}
@@ -41,10 +41,10 @@ const Header = () => {
             src="/good-will-foundation-osmania/images/logo/good-will-foundation-logo.png"
           />
         </Col>
-        <Col xs={0} lg={14}>
+        <Col xs={0} lg={16}>
           <NavMenu />
         </Col>
-        <Col xs={4} lg={0}>
+        <Col xs={2} lg={0}>
           <Button
             type="text"
             onClick={toggleDrawer}
@@ -52,7 +52,7 @@ const Header = () => {
             size="large"
           />
         </Col>
-        <Col xs={0} lg={4} style={{ textAlign: "right", padding: "0px" }}>
+        <Col xs={0} lg={2} style={{ textAlign: "right", padding: "0px" }}>
           <Image
             preview={false}
             width={65}

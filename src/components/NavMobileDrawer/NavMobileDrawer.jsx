@@ -67,7 +67,7 @@ const NavMobileDrawer = () => {
       collapsed={!isOpen}
       onCollapse={closeDrawer}
       collapsible
-      width={"82%"}
+      width={"85%"}
       style={{
         textAlign: "left",
         overflow: "hidden", // Hide full overflow, NavMenu will handle scrolling

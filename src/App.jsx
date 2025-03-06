@@ -14,15 +14,16 @@ import { motion } from "framer-motion";
 import BeneficiariesChart from "./components/BeneficiariesChart";
 import NavMobileDrawer from "./components/NavMobileDrawer";
 import NavMobileDrawerProvider from "./context/NavMobileDrawerProvider";
+import Supporters from "./components/Supporters/Supporters";
 
 const sections = [
   <HeroContent />,
   <AboutSection />,
+  <Supporters />,
   <ImageGallery />,
   <AchievementsTimeline />,
   <ContactInfo />,
-  <ForDonation />,
-  <BeneficiariesChart />,
+  <ForDonation />
 ];
 
 function App() {

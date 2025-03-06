@@ -6,6 +6,35 @@
     color: #0870c5;
 }
 
-#about-us h4::before {
-    content: "# ";
+
+#about-us ul.how-we-help li {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+
+}
+
+#about-us ul.how-we-help li>svg {
+    font-size: 2px;
+    width: 16px;
+    height: 16px;
+    fill: #ff5733;
+    width: 2%;
+}
+
+#about-us ul.how-we-help li>span {
+    width: 98%;
+}
+
+#about-us ul.how-we-help li:last-child {
+    align-items: start;
+    fill: #0cb0e2;
+}
+
+#about-us ul.how-we-help li:last-child>svg {
+    fill: #0cb0e2;
 }

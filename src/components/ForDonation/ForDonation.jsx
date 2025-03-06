@@ -1,21 +1,18 @@
 import React from "react";
-import { Card, Typography } from "antd";
+import { Card, Typography, Descriptions } from "antd";
+import { BankOutlined } from "@ant-design/icons";
 
-const { Title, Paragraph } = Typography;
+const { Title, Text } = Typography;
 
 const ForDonation = () => {
   return (
     <Card
-      title="For Donation"
+      title="Donate and Support"
       variant="borderless"
       id="for-donations"
       styles={{
-        body: {
-          textAlign: "left",
-        },
-        title: {
-          textAlign: "left",
-        },
+        body: { textAlign: "left" },
+        title: { textAlign: "left" },
         header: {
           background:
             "linear-gradient(114deg, rgb(120, 88, 248) 0%, rgb(88, 165, 254) 100%)",
@@ -23,15 +20,38 @@ const ForDonation = () => {
         },
       }}
     >
-      <Title level={4} style={{ marginTop: "0" }}>
+      <Title
+        level={4}
+        style={{ marginTop: "0", color: "#1565C0", fontWeight: 600 }}
+      >
+        <BankOutlined style={{ marginRight: 8 }} />
         Bank Account Details
       </Title>
-      <Paragraph>
-        <b>Name:</b> Good Will Foundation <br />
-        <b>A/c No:</b> 41832347362 <br />
-        <b>IFSC Code:</b> SBIN0021110 <br />
-        <b>Bank Name:</b> SBI OMC
-      </Paragraph>
+
+      <Descriptions column={1} bordered={false}>
+        <Descriptions.Item
+          label={<b>Bank Name</b>}
+          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
+        >
+          <Text copyable={{ text: "State Bank Of India (SBI), OMC Branch" }}>
+            State Bank Of India (SBI), OMC Branch
+          </Text>
+        </Descriptions.Item>
+
+        <Descriptions.Item
+          label={<b>Account No.</b>}
+          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
+        >
+          <Text copyable={{ text: "41832347362" }}>41832347362</Text>
+        </Descriptions.Item>
+
+        <Descriptions.Item
+          label={<b>IFSC Code</b>}
+          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
+        >
+          <Text copyable={{ text: "SBIN0021110" }}>SBIN0021110</Text>
+        </Descriptions.Item>
+      </Descriptions>
     </Card>
   );
 };
