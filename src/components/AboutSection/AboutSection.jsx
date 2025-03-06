@@ -46,9 +46,8 @@ const AboutSection = () => {
           growth.
         </li>
         <li>
-          {" "}
-          To focus on their studies without their constant worry of Financial
-          pressures .
+          To empower students to focus on their studies without constant worry
+          of financial pressures.
         </li>
       </ul>
 
