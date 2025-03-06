@@ -36,6 +36,9 @@ function App() {
               Layout: {
                 headerBg: "#ffffff",
               },
+              Carousel: {
+                arrowSize:  36,
+              }
             },
           }}
         >
