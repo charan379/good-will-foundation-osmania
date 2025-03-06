@@ -58,7 +58,7 @@ const AchievementsTimeline = () => {
             dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title={"Year 2024"} id="achivements-2024">
-                <ul>
+                <ul style={{ listStyleType: "disc" }}>
                   <li>
                     Distributed <b>17</b> sets of books to the MBBS <b>2024</b>{" "}
                     Batch.
@@ -129,7 +129,7 @@ const AchievementsTimeline = () => {
             dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2023" id="achivements-2023">
-                <ul>
+                <ul style={{ listStyleType: "disc" }}>
                   <li>
                     Distributed <b>07</b> sets of books to the MBBS <b>2023</b>{" "}
                     Batch.
@@ -151,7 +151,7 @@ const AchievementsTimeline = () => {
             dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2022" id="achivements-2022">
-                <ul>
+                <ul style={{ listStyleType: "disc" }}>
                   <li>
                     Distributed <b>10</b> sets of books to the MBBS <b>2022</b>{" "}
                     Batch.
@@ -173,7 +173,7 @@ const AchievementsTimeline = () => {
             dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title="Year 2021" id="achivements-2021">
-                <ul>
+                <ul style={{ listStyleType: "disc" }}>
                   <li>
                     Distributed <b>10</b> sets of books to the MBBS <b>2021</b>{" "}
                     Batch.
@@ -193,7 +193,7 @@ const AchievementsTimeline = () => {
             dot: <CarryOutOutlined style={{ fontSize: "28px" }} />,
             children: (
               <TimelineCard title={"Year 2020"} id="achivements-2020">
-                <ul>
+                <ul style={{ listStyleType: "disc" }}>
                   <li>
                     Distributed <b>10</b> sets of books to the MBBS <b>2020</b>{" "}
                     Batch
