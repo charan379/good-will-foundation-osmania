@@ -48,6 +48,15 @@ const ContactInfo = () => {
         </Descriptions.Item>
 
         <Descriptions.Item
+          label="&reg; &nbsp; Regd.No"
+          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
+        >
+          <Link href="#" target="_blank" rel="noopener noreferrer">
+            46/2023
+          </Link>
+        </Descriptions.Item>
+
+        <Descriptions.Item
           label="📸 Instagram"
           styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
         >

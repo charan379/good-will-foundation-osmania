@@ -50,12 +50,25 @@ const HeroContent = () => {
           >
             Osmania Medical College
           </Typography.Text>
+          <br />
+          <Typography.Text
+            style={{
+              margin: 0,
+              color: "#fff",
+              fontWeight: 500,
+              letterSpacing: "0.5px",
+              fontSize: "10px"
+
+            }}
+          >
+            Regd.No. 46/2023
+          </Typography.Text>
           <Typography.Paragraph style={{ color: "#fff", margin: "20px 0" }}>
-            <b>Good Will Foundation</b> is a student-organized
-            trust dedicated to supporting financially underprivileged first-year
-            MBBS students. Our mission is to provide financial aid, resources,
-            and a platform for students to pursue their dreams of becoming
-            doctors, regardless of their economic background.
+            <b>Good Will Foundation</b> is a student-organized trust dedicated
+            to supporting financially underprivileged first-year MBBS students.
+            Our mission is to provide financial aid, resources, and a platform
+            for students to pursue their dreams of becoming doctors, regardless
+            of their economic background.
           </Typography.Paragraph>
           <Button
             type="primary"

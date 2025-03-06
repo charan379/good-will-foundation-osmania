@@ -10,7 +10,7 @@ const Footer = () => {
         fontWeight: "600",
       }}
     >
-      &copy; Good Will Foundation Osmania Medical College 2020
+      &copy; Good Will Foundation Osmania Medical College 2020, All Rights Reserved. &reg; Regd.No. 46/2023
     </Layout.Footer>
   );
 };
