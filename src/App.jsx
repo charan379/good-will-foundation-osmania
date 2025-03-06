@@ -22,8 +22,8 @@ const sections = [
   <Supporters />,
   <ImageGallery />,
   <AchievementsTimeline />,
+  <ForDonation />,
   <ContactInfo />,
-  <ForDonation />
 ];
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
                 headerBg: "#ffffff",
               },
               Carousel: {
-                arrowSize:  36,
-              }
+                arrowSize: 36,
+              },
             },
           }}
         >

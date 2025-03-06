@@ -47,12 +47,28 @@ const NavMenu = () => {
         {
           key: "1",
           title: "Home",
-          label: <NavLabel name={"Home"} isLink={true} href={"home"} block={"start"} inline={"start"} />,
+          label: (
+            <NavLabel
+              name={"Home"}
+              isLink={true}
+              href={"home"}
+              block={"start"}
+              inline={"start"}
+            />
+          ),
         },
         {
           key: "2",
           title: "About us",
-          label: <NavLabel name={"About Us"} isLink={true} href={"our-goals"} block={"center"} inline={"center"} />,
+          label: (
+            <NavLabel
+              name={"About Us"}
+              isLink={true}
+              href={"our-goals"}
+              block={"center"}
+              inline={"center"}
+            />
+          ),
           children: [
             {
               key: "2.1",
@@ -85,17 +101,6 @@ const NavMenu = () => {
             },
             {
               key: "2.5",
-              title: "Our Supporters",
-              label: (
-                <NavLabel
-                  name={"Our Supporters"}
-                  isLink={true}
-                  href={"our-supporters"}
-                />
-              ),
-            },
-            {
-              key: "2.6",
               title: "How we help",
               label: (
                 <NavLabel
@@ -106,7 +111,7 @@ const NavMenu = () => {
               ),
             },
             {
-              key: "2.7",
+              key: "2.6",
               title: "Mission Statement",
               label: (
                 <NavLabel
@@ -133,7 +138,13 @@ const NavMenu = () => {
           key: "3",
           title: "Achivements",
           label: (
-            <NavLabel name={"Achivements"} isLink={true} href={"achivements-2020"} block={"center"} inline={"center"}/>
+            <NavLabel
+              name={"Achivements"}
+              isLink={true}
+              href={"achivements-2020"}
+              block={"center"}
+              inline={"center"}
+            />
           ),
           children: [
             {
@@ -197,14 +208,13 @@ const NavMenu = () => {
           key: "4",
           title: "Gallery",
           label: (
-            <NavLabel name={"Gallery"} isLink={true} href={"image-gallery"} block={"start"} inline={"start"} />
-          ),
-        },
-        {
-          key: "5",
-          title: "Contact Us",
-          label: (
-            <NavLabel name={"Contact Us"} isLink={true} href={"contact-us"} />
+            <NavLabel
+              name={"Gallery"}
+              isLink={true}
+              href={"image-gallery"}
+              block={"start"}
+              inline={"start"}
+            />
           ),
         },
         {
@@ -216,6 +226,13 @@ const NavMenu = () => {
               isLink={true}
               href={"for-donations"}
             />
+          ),
+        },
+        {
+          key: "6",
+          title: "Contact Us",
+          label: (
+            <NavLabel name={"Contact Us"} isLink={true} href={"contact-us"} />
           ),
         },
       ]}
