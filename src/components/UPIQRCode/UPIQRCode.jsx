@@ -71,7 +71,7 @@ const UPIQRCode = () => {
           <b>UPI ID:</b>
         </Text>
         <Link
-          href="upi://pay?pa=41832347362@sbi&pn=GOOD%20WILL%20FOUNDATION&cu=INR"
+          href="upi://pay?pa=41832347362@sbi&pn=GOOD%20WILL%20FOUNDATION&mc=8220&tr=&tn=&am=&cu=INR&url=&mode=02&purpose=00&orgid=180102&sign=MEUCIBnHPbOb3PIhtal6En6N7ekYcnGkylVMmYhULxVRDKgyAiEAsc5NCttGmuq3J/F/2nFfQDh/Dr2WLczIUCtlbsCL6X4="
           copyable
           style={{ color: "#00A0E3", fontWeight: 600 }}
         >
