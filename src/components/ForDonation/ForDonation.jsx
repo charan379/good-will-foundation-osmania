@@ -1,10 +1,15 @@
 import React from "react";
-import { Card, Typography, Descriptions } from "antd";
+import { Card, Typography, Flex, Divider } from "antd";
 import { BankOutlined } from "@ant-design/icons";
+import UPIQRCode from "../UPIQRCode/UPIQRCode";
+import useResponsive from "../../hooks/useResponsive";
+import BankDetails from "../BankDetails";
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 
 const ForDonation = () => {
+  const { isMobile } = useResponsive();
+
   return (
     <Card
       title="Donate and Support"
@@ -20,45 +25,52 @@ const ForDonation = () => {
         },
       }}
     >
-      <Title
-        level={4}
-        style={{ marginTop: "0", color: "#1565C0", fontWeight: 600 }}
+      <Flex
+        justify="center"
+        align="center"
+        gap={20}
+        wrap={isMobile} // Wrap in mobile view, side-by-side on desktop
+        style={{ textAlign: "center", minHeight: 320 }} // Ensures height for vertical divider
       >
-        <BankOutlined style={{ marginRight: 8 }} />
-        Bank Account Details
-      </Title>
+        {/* UPI QR Code */}
+        <UPIQRCode />
 
-      <Descriptions column={1} bordered={false}>
-        <Descriptions.Item
-          label={<b>Name</b>}
-          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
-        >
-          <Text copyable={{ text: "Good Will Foundation" }}>
-            Good Will Foundation
-          </Text>
-        </Descriptions.Item>
-        <Descriptions.Item
-          label={<b>Account No.</b>}
-          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
-        >
-          <Text copyable={{ text: "41832347362" }}>41832347362</Text>
-        </Descriptions.Item>
+        {/* OR Divider (Horizontal on desktop, Vertical on mobile) */}
+        {isMobile ? (
+          <Divider style={{ borderColor: "#1565C0" }}>Or</Divider>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              minHeight: "100%", // Ensures full height
+            }}
+          >
+            <Divider
+              type="vertical"
+              style={{
+                height: "100px", // Visible even if content is small
+                borderColor: "#1565C0",
+              }}
+            />
+            <Title level={5} style={{ margin: "5px 0", color: "#1565C0" }}>
+              Or
+            </Title>
+            <Divider
+              type="vertical"
+              style={{
+                height: "100px",
+                borderColor: "#1565C0",
+              }}
+            />
+          </div>
+        )}
 
-        <Descriptions.Item
-          label={<b>IFSC Code</b>}
-          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
-        >
-          <Text copyable={{ text: "SBIN0021110" }}>SBIN0021110</Text>
-        </Descriptions.Item>
-        <Descriptions.Item
-          label={<b>Bank</b>}
-          styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
-        >
-          <Text copyable={{ text: "State Bank Of India (SBI), OMC Branch" }}>
-            State Bank Of India (SBI), OMC Branch
-          </Text>
-        </Descriptions.Item>
-      </Descriptions>
+        {/* Bank Details */}
+        <BankDetails />
+      </Flex>
     </Card>
   );
 };
