@@ -24,6 +24,12 @@ const AboutSection = () => {
       }}
     >
       <Paragraph>
+        At Osmania Medical College, we believe that financial challenges should
+        never hinder a student’s dream of becoming a doctor. Good Will
+        Foundation is a student-led initiative dedicated to supporting
+        financially underprivileged first-year MBBS students
+      </Paragraph>
+      <Paragraph>
         With the encouragement and support of our former principal, Dr.
         Shashikala Madam, this initiative was established to provide financial
         aid, essential resources, and a strong support system. By fostering an
