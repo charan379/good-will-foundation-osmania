@@ -4,9 +4,9 @@ import { Card, List, Typography } from "antd";
 const { Paragraph } = Typography;
 
 const supportersData = [
-  "Dr. P. Shashikala Reddy Ma'am\nMBBS, MD (Microbiology), Former Principal, Osmania Medical College - provided moral support and encouragement to strengthen the foundation's success.",
-
   "Dr. A. Narendra Kumar Sir\nMBBS, M.S(Gen.Surg), MCH (Ped.Surg),\nDirector of Medical Education (DME)",
+
+  "Dr. P. Shashikala Reddy Ma’am (MBBS, MD – Microbiology), Former Principal of Osmania Medical College, played a key role in initiating the foundation and provided invaluable moral support and encouragement to strengthen its success.",
 
   "Dr. R. Nagarjuna Chary Sir\nMBBS, MD (Pathology) - Principal of Osmania Medical College",
 
@@ -74,10 +74,11 @@ const Supporters = () => {
         renderItem={(item) => <List.Item>🔹 {item}</List.Item>}
       />
       <Paragraph>
-        Without their support our organisation wouldn't be the same as it is
-        today.
+        Our organization thrives because of your invaluable support. Thank you
+        for being a part of our journey! 🙏
         <br />
-        Thank you for all the support ! 🙏
+        We still seek your continued support to ensure the ongoing success and
+        growth of our organisation
       </Paragraph>
     </Card>
   );

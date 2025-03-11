@@ -60,27 +60,19 @@ const NavMenu = () => {
         {
           key: "2",
           title: "About us",
-          label: (
-            <NavLabel
-              name={"About Us"}
-              isLink={true}
-              href={"our-goals"}
-              block={"center"}
-              inline={"center"}
-            />
-          ),
+          label: <NavLabel name={"About Us"} isLink={true} href={"about-us"} />,
           children: [
-            {
-              key: "2.1",
-              title: "Our Mission",
-              label: (
-                <NavLabel
-                  name={"Our Mission"}
-                  isLink={true}
-                  href={"our-goals"}
-                />
-              ),
-            },
+            // {
+            //   key: "2.1",
+            //   title: "Our Mission",
+            //   label: (
+            //     <NavLabel
+            //       name={"Our Mission"}
+            //       isLink={true}
+            //       href={"our-goals"}
+            //     />
+            //   ),
+            // },
             {
               key: "2.3",
               title: "Our Goals",
@@ -101,10 +93,10 @@ const NavMenu = () => {
             },
             {
               key: "2.5",
-              title: "How we help",
+              title: "Support We Offer",
               label: (
                 <NavLabel
-                  name={"How we help"}
+                  name={"Support We Offer"}
                   isLink={true}
                   href={"how-we-help"}
                 />

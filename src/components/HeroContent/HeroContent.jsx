@@ -6,8 +6,8 @@ const HeroContent = () => {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-        block: "start",
-        inline: "start",
+        block: "center",
+        inline: "center",
       });
     }
   };
@@ -26,19 +26,19 @@ const HeroContent = () => {
       <Row
         justify="start"
         align="middle"
-        style={{ minHeight: "80vh", textAlign: "left", padding: "0 50px" }}
+        style={{ minHeight: "85dvh", textAlign: "left", padding: "0 50px" }}
         id="home"
       >
-        <Col sm={24} lg={12}>
+        <Col sm={24}>
           <Typography.Title
-            level={1}
+            level={2}
             style={{
               margin: 0,
               color: "#fff",
               letterSpacing: 1,
             }}
           >
-            Good Will Foundation
+            Good Will Foundation: Empowering Dreams, Transforming Lives
           </Typography.Title>
           <Typography.Text
             style={{
@@ -57,18 +57,16 @@ const HeroContent = () => {
               color: "#fff",
               fontWeight: 500,
               letterSpacing: "0.5px",
-              fontSize: "10px"
-
+              fontSize: "10px",
             }}
           >
             Regd.No. 46/2023
           </Typography.Text>
           <Typography.Paragraph style={{ color: "#fff", margin: "20px 0" }}>
-            <b>Good Will Foundation</b> is a student-organized trust dedicated
-            to supporting financially underprivileged first-year MBBS students.
-            Our mission is to provide financial aid, resources, and a platform
-            for students to pursue their dreams of becoming doctors, regardless
-            of their economic background.
+            At Osmania Medical College, we believe that financial challenges
+            should never hinder a student’s dream of becoming a doctor. Good
+            Will Foundation is a student-led initiative dedicated to supporting
+            financially underprivileged first-year MBBS students.
           </Typography.Paragraph>
           <Button
             type="primary"

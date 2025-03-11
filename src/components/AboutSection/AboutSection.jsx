@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Typography } from "antd";
-import Supporters from "../Supporters/Supporters";
 import "./about-section.css";
 
 const { Title, Paragraph } = Typography;
@@ -8,9 +7,8 @@ const { Title, Paragraph } = Typography;
 const AboutSection = () => {
   return (
     <Card
-      id="about-us"
       variant="borderless"
-      title="About Us"
+      title={<span id="about-us">About Us</span>}
       styles={{
         title: {
           textAlign: "left",
@@ -26,11 +24,12 @@ const AboutSection = () => {
       }}
     >
       <Paragraph>
-        <b>Good Will Foundation</b> is a student-organized trust dedicated to
-        supporting financially underprivileged first-year MBBS (Bachelor of
-        Medicine, Bachelor of Surgery) students. Our mission is to provide
-        financial aid, resources, and a platform for students to pursue their
-        dreams of becoming doctors, regardless of their economic background.
+        With the encouragement and support of our former principal, Dr.
+        Shashikala Madam, this initiative was established to provide financial
+        aid, essential resources, and a strong support system. By fostering an
+        environment of inclusivity and solidarity, we strive to ensure that
+        every aspiring doctor, regardless of economic background, has the
+        opportunity to pursue their passion and serve society.
       </Paragraph>
 
       <Title level={4} id="our-goals">
@@ -66,7 +65,7 @@ const AboutSection = () => {
         programme by our former Prime Minister <b>Indira Gandhi </b>. <br />
       </Paragraph>
       <Title level={4} id="how-we-help">
-        How We Help
+        Support We Offer
       </Title>
       <Paragraph>
         <ul
