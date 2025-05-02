@@ -114,6 +114,9 @@ const AchievementsTimeline = () => {
                         Dr.Patnam Mahender Reddy institute of Medical Sciences -
                         <b>01</b> set.{" "}
                       </li>
+                      <li>
+                        GMC Suryapet - <b>01</b> set{" "}
+                      </li>
                     </ol>
                   </li>
                   <li>
