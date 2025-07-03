@@ -64,7 +64,7 @@ const AchievementsTimeline = () => {
                     Batch.
                   </li>
                   <li>
-                    Paying Mess bill for <b>14</b> students.
+                    Paying Mess bill for <b>15</b> students.
                   </li>
                   <li>
                     Distributed <b>06 & half</b> Bone sets.
@@ -99,7 +99,7 @@ const AchievementsTimeline = () => {
                         SIMS Ramagundam - <b>05</b> sets.
                       </li>
                       <li>
-                        GMC Nagarkurnool - <b>05</b> sets.
+                        GMC Nagarkurnool - <b>03</b> sets.
                       </li>
                       <li>
                         GMC Kamareddy - <b>03</b> sets.
@@ -156,14 +156,14 @@ const AchievementsTimeline = () => {
               <TimelineCard title="Year 2022" id="achivements-2022">
                 <ul style={{ listStyleType: "disc" }}>
                   <li>
-                    Distributed <b>10</b> sets of books to the MBBS <b>2022</b>{" "}
+                    Distributed <b>08</b> sets of books to the MBBS <b>2022</b>{" "}
                     Batch.
                   </li>
                   <li>
                     Paid Mess bill for <b>12</b> students.
                   </li>
                   <li>
-                    Paid Exam fee for <b>09</b> students.
+                    Paid Exam fee for <b>10</b> students.
                   </li>
                   <li>
                     Distributed <b>05</b> Bone Sets.
@@ -178,11 +178,11 @@ const AchievementsTimeline = () => {
               <TimelineCard title="Year 2021" id="achivements-2021">
                 <ul style={{ listStyleType: "disc" }}>
                   <li>
-                    Distributed <b>10</b> sets of books to the MBBS <b>2021</b>{" "}
+                    Distributed <b>07</b> sets of books to the MBBS <b>2021</b>{" "}
                     Batch.
                   </li>
                   <li>
-                    Paid Mess bill for <b>03</b> students.
+                    Paid Mess bill for <b>04</b> students.
                   </li>
                   <li>
                     Distributed <b>04</b> Bone Sets.{" "}
@@ -198,7 +198,7 @@ const AchievementsTimeline = () => {
               <TimelineCard title={"Year 2020"} id="achivements-2020">
                 <ul style={{ listStyleType: "disc" }}>
                   <li>
-                    Distributed <b>10</b> sets of books to the MBBS <b>2020</b>{" "}
+                    Distributed <b>07</b> sets of books to the MBBS <b>2020</b>{" "}
                     Batch
                   </li>
                   <li>

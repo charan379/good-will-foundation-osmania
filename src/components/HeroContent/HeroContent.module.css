@@ -1,0 +1,71 @@
+.heroCard {
+    position: relative;
+    /* Required for absolutely positioned children */
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    /* Set height as needed */
+}
+
+.heroBg {
+    background-image: url("/images/hero/Osmania_Medical_College_Image.jpg");
+    filter: blur(0px);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.heroText {
+    position: absolute;
+    height: 60%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    /* Overlay */
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #f1f1f1; */
+    border-radius: 5px;
+    top: 10%;
+    left: 5%;
+}
+
+@media (max-width: 768px) {
+    .heroBg {
+        background-image: url("/images/hero/omc_hospital.jpg");
+    }
+
+    .heroText {
+        height: 70%;
+        width: 90%;
+        padding: 1px;
+        top: 15%;
+    }
+}
+
+@media (max-width: 540px) {
+    .heroText {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .heroCard {
+        height: 550px;
+    }
+}

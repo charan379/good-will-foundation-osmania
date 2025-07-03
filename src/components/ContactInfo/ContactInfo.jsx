@@ -26,7 +26,7 @@ const ContactInfo = () => {
           styles={{ label: { color: "#1565C0", fontWeight: 600 } }}
         >
           <Link href="tel:+919502856759">+91 9502856759</Link>,{" "}
-          <Link href="tel:+919121941503">+91 9121941503</Link>
+          <Link href="tel:+916305954036">+91 6305954036</Link>
         </Descriptions.Item>
 
         <Descriptions.Item
