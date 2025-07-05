@@ -15,6 +15,8 @@ import BeneficiariesChart from "./components/BeneficiariesChart";
 import NavMobileDrawer from "./components/NavMobileDrawer";
 import NavMobileDrawerProvider from "./context/NavMobileDrawerProvider";
 import Supporters from "./components/Supporters/Supporters";
+import { useEffect } from 'react';
+import ReactGA from 'react-ga4';
 
 const sections = [
   <HeroContent key={1} />,
@@ -27,6 +29,15 @@ const sections = [
 ];
 
 function App() {
+
+  useEffect(() => {
+    ReactGA.initialize("G-YQYMZCKQLF");
+    ReactGA.send({ hitType: "pageview", page: "/", title: "Good Will Foundation: Empowering Dreams, Transforming Lives- OMC" })
+    return () => {
+
+    }
+  }, [])
+
   return (
     <ErrorBoundary>
       <NavMobileDrawerProvider>
